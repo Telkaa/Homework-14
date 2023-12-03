@@ -1,0 +1,141 @@
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        margin-bottom: 18px;
+        align-items: center;
+           .icon{
+              margin-left: 99px;
+               }
+            ul{
+                display: flex;
+                gap:50px;
+                justify-content: flex-end;
+                margin-left: 99px;
+                margin-right: 80px;
+                li{
+                    list-style: none;
+                    color: $colorgrey;
+                    font-size: 17px;
+                    @include font; 
+                    @media (max-width:1000px){
+                        display: none;
+                    }
+                }
+                #img-li{
+                    display: none;
+                    @media (max-width:1000px){
+                        display: inline-block;
+                    }
+                #img-li > img{
+                    width: 32px;
+                    margin-right: 10px;
+                }
+        }
+    }
+    }}
+.div-img{
+    background-image: url("../images/Rectangle 1.png");
+    width: auto;
+    height: 606px;
+    object-fit: cover;
+    background-size:cover ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 84px;
+        h1{
+          color:$colorwhite;
+          font-size: 79px;
+          @include fontforh1;
+        }
+        .div-img-p{
+            color:$colorwhite;
+            font-size: 19px;
+            @include font;
+        }
+}
+.two-div{
+    display: flex;
+    .container{
+        margin-left: 100px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        @media (max-width:1410px){
+            flex-direction:row;
+            align-items: flex-end;
+            gap: 10px;
+            margin-bottom: 100px;
+
+        }
+         .container-p{
+            font-size: 20px;
+            @include font;
+            margin-top: 37px;
+            width: 235px;
+            @media (max-width: 1410px){
+                width: 100%;
+            }
+         }
+         h2{
+            color:$colorb;
+            font-size: 28px;
+            @include font;
+            margin-top: 9px;
+         } 
+              
+    }
+
+    .main-container{
+        .main-cont1{
+            display: flex;
+            gap:33px;
+            h3{
+                color:$colordark;
+                font-size: 19px;
+                @include font;
+                margin-top: 23px;
+                @media(max-width:480px){
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+            }
+            .cont-p{
+                color:$colorgrey;
+                @include font;
+                font-size: 18px;
+                margin-top: 9px;
+                @media (max-width:480px){
+                    font-size: 13px;
+                }
+            }
+            
+        }
+        .main-cont2{
+            display: flex;
+            gap:33px;
+            margin-top: 54px;
+            margin-bottom: 140px;
+            h3{
+                color:$colordark;
+                font-size: 19px;
+                @include font;
+                margin-top: 23px;
+            }
+            .cont-p{
+                color:$colorgrey;
+                @include font;
+                font-size: 18px;
+                margin-top: 9px;
+            }
+
+        }
+    }
+    @media (max-width:1410px){
+        flex-direction: column;
+        align-items: center;
+    }
+}

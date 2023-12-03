@@ -1,0 +1,12 @@
+@mixin font{
+    font-family: $myfont;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@mixin fontforh1{
+    font-family: $myfont;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
